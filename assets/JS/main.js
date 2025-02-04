@@ -10,15 +10,3 @@ window.onscroll = function () {
         header.classList.remove("active")
     }
 }
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    var animation = lottie.loadAnimation({
-        container: document.getElementById("lottie-container"),
-        renderer: "svg",
-        loop: true,
-        autoplay: true,
-        path: "/assets/JSON/web-design-layout.json", // Ensure this file is in the correct path
-    });
-});
-
