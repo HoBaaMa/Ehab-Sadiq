@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         renderer: "svg",
         loop: true,
         autoplay: true,
-        path: "web-design-layout.json", // Ensure this file is in the correct path
+        path: "/assets/JSON/web-design-layout.json", // Ensure this file is in the correct path
     });
 });
 
