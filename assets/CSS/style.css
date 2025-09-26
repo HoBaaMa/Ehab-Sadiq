@@ -381,7 +381,6 @@ p {
 
 .about-me .text-div p {
     line-height: 1.8;
-    font-size: 18px;
 }
 
 .about-me .text-div ul {
@@ -513,7 +512,6 @@ p {
     text-transform: capitalize;
     font-size: 25px;
     margin-bottom: 20px;
-    /* font-weight: 500; */
 }
 
 .services .box p {
@@ -559,8 +557,9 @@ p {
 .certificates .certificate-box .text {
     margin-left: 50px;
     width: calc(50% - 50px);
-    font-size: 20px;
-    font-weight: 500;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
 }
 
 .certificates .certificate-box .text h4 {
@@ -967,121 +966,8 @@ p {
     }
 }
 
-border: 2px solid var(--border-color);
-background-color: #0d0d0d;
+/* End Contact Section*/
 
-}
-
-.contact .top-section {
-    margin-bottom: 100px;
-}
-
-.contact .container {
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.contact .social-contact {
-    width: 30%;
-}
-
-.contact .social-contact h2 {
-    text-transform: capitalize;
-    margin-bottom: 40px;
-}
-
-.contact .social-contact .links {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.contact .social-contact .links a {
-    margin-bottom: 25px;
-    text-decoration: none;
-    color: var(--white_color);
-    font-size: 20px;
-    position: relative;
-    left: 0;
-    transition: 0.3s;
-}
-
-.contact .social-contact .links i {
-    color: var(--bg_color);
-    margin-right: 5px;
-    width: 45px;
-    height: 45px;
-    text-align: center;
-    background-color: var(--main_color);
-    line-height: 45px;
-    border-radius: 5px;
-}
-
-.contact .social-contact .links a:hover {
-    left: 15px;
-}
-
-.contact form {
-    width: 60%;
-    text-align: center;
-}
-
-.contact form .inpts {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-
-.contact form .inpts input,
-.contact form textarea {
-    border-radius: 5px;
-    padding: 20px;
-    outline: none;
-    background-color: var(--bg_color);
-    color: var(--white_color);
-    margin-bottom: 30px;
-    border: 1px solid var(--border-color);
-    transition: 0.6s ease-in-out;
-}
-
-.contact form .inpts input {
-    width: 48%;
-}
-
-.contact form .inpts textarea {
-    width: 100%;
-}
-
-.contact form .inpts input:focus,
-.contact form textarea:focus {
-    border-color: var(--main_color);
-}
-
-.contact form .btn {
-    outline: none;
-    padding: 15px 25px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: 0.3s;
-    background-color: var(--main_color);
-    border: solid 5px var(--border-color);
-    border-radius: 10px;
-    font-weight: 800;
-
-}
-
-.contact form .btn:hover {
-    scale: 1.1;
-}
-
-.contact form .btn:active {
-    scale: 0.90;
-}
-
-*/
 
 /* Dropdown Menu Styling */
 .dropdown-menu {
@@ -1238,6 +1124,110 @@ background-color: #0d0d0d;
 }
 
 @media (max-width: 992px) {
+    @@ -1099, 6+1274, 21 @@ margin-right: 0;
+}
+
+/* Contact section tablet layout */
+.contact .container {
+    padding: 45px 30px;
+    max-width: 900px;
+}
+
+.contact .contact-text h2 {
+    font-size: 38px;
+}
+
+.contact .container p {
+    width: 75%;
+    font-size: 16px;
+}
+
+.services .box {
+    width: 48%;
+    margin-bottom: 20px;
+    @@ -1189, 6+1379, 36 @@ text-align: center;
+    padding: 15px;
+}
+
+/* Contact section responsive */
+.contact .container {
+    padding: 40px 30px;
+    min-height: 300px;
+}
+
+.contact .contact-text h2 {
+    font-size: 36px;
+}
+
+.contact .container p {
+    width: 80%;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.contact-btns {
+    gap: 15px;
+}
+
+.contact-btns .contact-me-btn {
+    padding: 16px 32px;
+    font-size: 16px;
+}
+
+.contact-btns .button-icon {
+    width: 55px;
+    height: 55px;
+}
+}
+
+@media (max-width: 576px) {
+    @@ -1282, 6+1502, 47 @@ .info a {
+        font-size: 14px;
+    }
+
+    /* Contact section mobile optimizations */
+    .contact {
+        padding: 60px 0;
+    }
+
+    .contact .container {
+        padding: 30px 20px;
+        min-height: 250px;
+        border-radius: 15px;
+    }
+
+    .contact .contact-text h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .contact .container p {
+        width: 95%;
+        font-size: 14px;
+        margin: 15px 0 30px;
+        line-height: 1.6;
+    }
+
+    .contact-btns {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .contact-btns .contact-me-btn {
+        width: 100%;
+        max-width: 280px;
+        padding: 14px 28px;
+        font-size: 16px;
+    }
+
+    .contact-btns .button-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 992px) {
     .hero {
         height: auto;
         padding-bottom: 40px;
@@ -1273,21 +1263,6 @@ background-color: #0d0d0d;
     .about-me #lottie-container {
         width: 100%;
         margin-right: 0;
-    }
-
-    /* Contact section tablet layout */
-    .contact .container {
-        padding: 45px 30px;
-        max-width: 900px;
-    }
-
-    .contact .contact-text h2 {
-        font-size: 38px;
-    }
-
-    .contact .container p {
-        width: 75%;
-        font-size: 16px;
     }
 
     .services .box {
@@ -1379,36 +1354,6 @@ background-color: #0d0d0d;
         justify-content: center;
         text-align: center;
         padding: 15px;
-    }
-
-    /* Contact section responsive */
-    .contact .container {
-        padding: 40px 30px;
-        min-height: 300px;
-    }
-
-    .contact .contact-text h2 {
-        font-size: 36px;
-    }
-
-    .contact .container p {
-        width: 80%;
-        font-size: 16px;
-        margin: 20px 0 40px;
-    }
-
-    .contact-btns {
-        gap: 15px;
-    }
-
-    .contact-btns .contact-me-btn {
-        padding: 16px 32px;
-        font-size: 16px;
-    }
-
-    .contact-btns .button-icon {
-        width: 55px;
-        height: 55px;
     }
 }
 
@@ -1502,47 +1447,6 @@ background-color: #0d0d0d;
 
     .info a {
         font-size: 14px;
-    }
-
-    /* Contact section mobile optimizations */
-    .contact {
-        padding: 60px 0;
-    }
-
-    .contact .container {
-        padding: 30px 20px;
-        min-height: 250px;
-        border-radius: 15px;
-    }
-
-    .contact .contact-text h2 {
-        font-size: 28px;
-        margin-bottom: 15px;
-    }
-
-    .contact .container p {
-        width: 95%;
-        font-size: 14px;
-        margin: 15px 0 30px;
-        line-height: 1.6;
-    }
-
-    .contact-btns {
-        flex-direction: column;
-        gap: 20px;
-        width: 100%;
-    }
-
-    .contact-btns .contact-me-btn {
-        width: 100%;
-        max-width: 280px;
-        padding: 14px 28px;
-        font-size: 16px;
-    }
-
-    .contact-btns .button-icon {
-        width: 50px;
-        height: 50px;
     }
 }
 
