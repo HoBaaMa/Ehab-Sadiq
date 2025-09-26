@@ -381,6 +381,7 @@ p {
 
 .about-me .text-div p {
     line-height: 1.8;
+    font-size: 18px;
 }
 
 .about-me .text-div ul {
@@ -512,6 +513,7 @@ p {
     text-transform: capitalize;
     font-size: 25px;
     margin-bottom: 20px;
+    /* font-weight: 500; */
 }
 
 .services .box p {
@@ -557,9 +559,8 @@ p {
 .certificates .certificate-box .text {
     margin-left: 50px;
     width: calc(50% - 50px);
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .certificates .certificate-box .text h4 {
@@ -809,9 +810,168 @@ p {
 
 
 /* Start Contact Section */
-/*.contact {
-    /* width: 100%; */
-/* min-height: 95vh; }*/
+.contact {
+    background-color: var(--black_color);
+    padding: 100px 0;
+}
+
+.contact .container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 400px;
+    padding: 60px 40px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    border-radius: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact .contact-text h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--white_color);
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-transform: none;
+    text-transform: capitalize;
+}
+
+.contact .container p {
+    color: var(--p_color);
+    width: 60%;
+    line-height: 1.8;
+    font-weight: 600;
+    margin: 30px 0 50px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.contact-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-btns .contact-me-btn {
+    background: linear-gradient(135deg, var(--main_color) 0%, #7dd3fc 100%);
+    color: var(--black_color);
+    padding: 18px 36px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(163, 241, 246, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-btns .contact-me-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(163, 241, 246, 0.4);
+    background: linear-gradient(135deg, #7dd3fc 0%, var(--main_color) 100%);
+}
+
+.contact-btns .contact-me-btn:active {
+    transform: translateY(-1px);
+}
+
+.contact-btns .button-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--white_color) 0%, #f8f9fa 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-btns .button-icon:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 12px 35px rgba(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, #f8f9fa 0%, var(--white_color) 100%);
+}
+
+.contact-btns .button-icon:active {
+    transform: translateY(-1px) scale(1.02);
+}
+
+.contact-btns .button-icon svg {
+    transition: all 0.3s ease;
+}
+
+.contact-btns .button-icon:hover svg {
+    transform: scale(1.1);
+}
+
+/* Additional contact section enhancements */
+.contact .contact-text h2 {
+    background: linear-gradient(135deg, var(--white_color) 0%, var(--main_color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.contact .container p {
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.contact-btns {
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Focus states for accessibility */
+.contact-btns .contact-me-btn:focus,
+.contact-btns .button-icon:focus {
+    outline: 2px solid var(--main_color);
+    outline-offset: 4px;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+
+    .contact .contact-text h2,
+    .contact .container p,
+    .contact-btns {
+        animation: none;
+    }
+
+    .contact-btns .contact-me-btn:hover,
+    .contact-btns .button-icon:hover {
+        transform: none;
+    }
+}
+
+/* .contact {
+    border: 2px solid var(--border-color);
+    background-color: #0d0d0d;
+    
+}
 
 .contact .top-section {
     margin-bottom: 100px;
@@ -920,7 +1080,7 @@ p {
 
 .contact form .btn:active {
     scale: 0.90;
-}
+} */
 
 /* Dropdown Menu Styling */
 .dropdown-menu {
@@ -1059,6 +1219,21 @@ p {
     .hero .text-div h2 {
         font-size: 56px;
     }
+
+    /* Contact section tablet adjustments */
+    .contact .container {
+        padding: 50px 35px;
+        max-width: 1000px;
+    }
+
+    .contact .contact-text h2 {
+        font-size: 42px;
+    }
+
+    .contact .container p {
+        width: 70%;
+        font-size: 17px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -1097,6 +1272,21 @@ p {
     .about-me #lottie-container {
         width: 100%;
         margin-right: 0;
+    }
+
+    /* Contact section tablet layout */
+    .contact .container {
+        padding: 45px 30px;
+        max-width: 900px;
+    }
+
+    .contact .contact-text h2 {
+        font-size: 38px;
+    }
+
+    .contact .container p {
+        width: 75%;
+        font-size: 16px;
     }
 
     .services .box {
@@ -1188,6 +1378,36 @@ p {
         justify-content: center;
         text-align: center;
         padding: 15px;
+    }
+
+    /* Contact section responsive */
+    .contact .container {
+        padding: 40px 30px;
+        min-height: 300px;
+    }
+
+    .contact .contact-text h2 {
+        font-size: 36px;
+    }
+
+    .contact .container p {
+        width: 80%;
+        font-size: 16px;
+        margin: 20px 0 40px;
+    }
+
+    .contact-btns {
+        gap: 15px;
+    }
+
+    .contact-btns .contact-me-btn {
+        padding: 16px 32px;
+        font-size: 16px;
+    }
+
+    .contact-btns .button-icon {
+        width: 55px;
+        height: 55px;
     }
 }
 
@@ -1281,6 +1501,47 @@ p {
 
     .info a {
         font-size: 14px;
+    }
+
+    /* Contact section mobile optimizations */
+    .contact {
+        padding: 60px 0;
+    }
+
+    .contact .container {
+        padding: 30px 20px;
+        min-height: 250px;
+        border-radius: 15px;
+    }
+
+    .contact .contact-text h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .contact .container p {
+        width: 95%;
+        font-size: 14px;
+        margin: 15px 0 30px;
+        line-height: 1.6;
+    }
+
+    .contact-btns {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .contact-btns .contact-me-btn {
+        width: 100%;
+        max-width: 280px;
+        padding: 14px 28px;
+        font-size: 16px;
+    }
+
+    .contact-btns .button-icon {
+        width: 50px;
+        height: 50px;
     }
 }
 
