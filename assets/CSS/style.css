@@ -967,10 +967,9 @@ p {
     }
 }
 
-/* .contact {
-    border: 2px solid var(--border-color);
-    background-color: #0d0d0d;
-    
+border: 2px solid var(--border-color);
+background-color: #0d0d0d;
+
 }
 
 .contact .top-section {
@@ -1080,7 +1079,9 @@ p {
 
 .contact form .btn:active {
     scale: 0.90;
-} */
+}
+
+*/
 
 /* Dropdown Menu Styling */
 .dropdown-menu {
