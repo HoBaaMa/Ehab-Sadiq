@@ -45,8 +45,6 @@ toggleBtn.addEventListener('click', () => {
     }
 });
 
-// removed X button; hamburger handles both open and close
-
 // Close on Escape key
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && dropdownMenu.classList.contains('open')) {
