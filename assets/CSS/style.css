@@ -515,13 +515,84 @@ p {
 
 /* End Services Section */
 
+/* Start certificates Section */
+.certificates {
+    background-color: var(--black_color);
+}
+
+.certificates .certificate-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.certificates .certificate-box img {
+    width: 45%;
+    border: 10px solid var(--main_color);
+    border-radius: 25px;
+}
+
+.certificates .certificate-box .text {
+    margin-left: 100px;
+    width: calc(50% - 100px);
+}
+
+.certificates .certificate-box .text h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.certificates .certificate-box .text h3 {
+    font-size: 40px;
+    color: var(--white_color);
+    transition: 0.5s;
+    text-transform: capitalize;
+}
+
+.certificates .certificate-box .text h3:hover {
+    color: var(--main_color);
+}
+
+.certificates .certificate-box .text p {
+    margin: 30px 0 50px;
+    line-height: 1.8;
+}
+
+.certificates .certificate-box .text .link {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--border-color);
+    color: var(--black_color);
+    font-size: 20px;
+    background-color: var(--main_color);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    rotate: 45deg;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.certificates .certificate-box .text .link:hover {
+    scale: 1.2;
+}
+
+.certificates .certificate-box.certificate-box-2 {
+    flex-direction: row-reverse;
+}
+
+
+/* End certificates Section */
+
 
 /* Start Contact Section */
-.contact {
-    background-color: var(--black_color);
+/*.contact {
     /* width: 100%; */
-    min-height: 95vh;
-}
+/* min-height: 95vh; }*/
 
 .contact .top-section {
     margin-bottom: 100px;
