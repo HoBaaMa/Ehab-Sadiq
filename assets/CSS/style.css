@@ -11,6 +11,7 @@
 
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -58,6 +59,8 @@ header {
 }
 
 header.active {
+    -webkit-backdrop-filter: blur(10px);
+    /* لدعم Safari */
     background: rgba(0, 0, 0, 0.5);
     /* لون شفاف للخلفية */
     backdrop-filter: blur(6px);
@@ -234,6 +237,9 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease forwards;
 }
 
 .btns {
@@ -971,6 +977,8 @@ p {
 
 /* Dropdown Menu Styling */
 .dropdown-menu {
+    -webkit-backdrop-filter: blur(10px);
+    /* لدعم Safari */
     display: block;
     position: fixed;
     top: 0;
