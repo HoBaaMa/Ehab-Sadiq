@@ -16,27 +16,48 @@ const dropdownMenu = document.querySelector('.dropdown-menu');
 
 const focusableSelectors = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
 let lastFocusedBeforeOpen = null;
+let scrollPosition = 0; // Store scroll position globally
 
 function openMenu() {
+    // Store current scroll position before applying no-scroll
+    scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+    
     dropdownMenu.classList.add('open');
     document.body.classList.add('no-scroll');
+    document.documentElement.classList.add('no-scroll');
+    
+    // Apply the stored scroll position to the body
+    document.body.style.top = `-${scrollPosition}px`;
+    
     toggleBtn.setAttribute('aria-expanded', 'true');
     lastFocusedBeforeOpen = document.activeElement;
-    const firstFocusable = dropdownMenu.querySelector(focusableSelectors);
-    if (firstFocusable) firstFocusable.focus();
+    
+    // Focus the menu container instead of a specific link
+    dropdownMenu.focus();
 }
 
 function closeMenu() {
     dropdownMenu.classList.remove('open');
     document.body.classList.remove('no-scroll');
+    document.documentElement.classList.remove('no-scroll');
+    
+    // Remove the top style and restore scroll position
+    document.body.style.top = '';
+    window.scrollTo(0, scrollPosition);
+    
     toggleBtn.setAttribute('aria-expanded', 'false');
+    
+    // Restore focus to toggle button without causing scroll
     if (lastFocusedBeforeOpen) {
-        toggleBtn.focus();
+        toggleBtn.focus({ preventScroll: true });
         lastFocusedBeforeOpen = null;
     }
 }
 
-toggleBtn.addEventListener('click', () => {
+toggleBtn.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent any default behavior
+    e.stopPropagation(); // Stop event bubbling
+    
     const isOpen = dropdownMenu.classList.contains('open');
     if (isOpen) {
         closeMenu();
