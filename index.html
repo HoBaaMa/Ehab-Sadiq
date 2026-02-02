@@ -1,332 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <!-- Meta Data -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="Ehab Sadiq - .NET Developer" />
-    <meta name="description" content="Welcome to my portfolio website. I am Ehab Sadiq, a .NET developer." />
-    <meta name="keywords" content="Ehab Sadiq, .NET, developer, portfolio, Portfolio of Ehab Sadiq" />
-    <title>Ehab Sadiq - .NET Developer</title>
-    <!-- Author -->
-    <meta name="author" content="Ehab Sadiq" />
+  <!-- Primary Meta Tags -->
+  <title>Ehab Sadiq - Software Developer</title>
+  <meta name="title" content="Ehab Sadiq | Web Developer & Software Engineer" />
+  <meta name="description"
+    content="I'm Ehab Sadiq, a passionate web developer and computer science student specializing in WordPress, .NET, React, and SEO. Building modern, responsive web applications." />
+  <meta name="author" content="Ehab Sadiq" />
+  <meta name="keywords"
+    content="Ehab Sadiq, web developer, software engineer, WordPress developer, .NET developer, React developer, SEO specialist, full stack developer, portfolio, freelance developer, web design, Egypt, إيهاب صادق, مطور ويب, مهندس برمجيات في مصر, مطور ووردبريس بمصر ,مطور ووكومرس بمصر , مطور دوت نت بمصر, متخصص سيو, مطور فول ستاك, بورتفوليو, مطور مستقل, تصميم مواقع, مصر" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="English, Arabic" />
 
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="assets/CSS/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ehab-sadiq.me/" />
+  <meta property="og:title" content="Ehab Sadiq | Web Developer & Software Engineer" />
+  <meta property="og:description"
+    content="I'm Ehab Sadiq, a passionate web developer and computer science student specializing in WordPress, .NET, React, and SEO. Building modern, responsive web applications." />
+  <meta property="og:image" content="https://ehab-sadiq.me/og-image.png" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_EG" />
+  <meta property="og:site_name" content="Ehab Sadiq - Software Developer" />
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://ehab-sadiq.me/" />
+  <meta name="twitter:title" content="Ehab Sadiq | Web Developer & Software Engineer" />
+  <meta name="twitter:description"
+    content="I'm Ehab Sadiq, a passionate web developer and computer science student specializing in WordPress, .NET, React, and SEO." />
+  <meta name="twitter:image" content="https://ehab-sadiq.me/og-image.png" />
 
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://ehab-sadiq.me/" />
 
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicons/favicon.ico">
 </head>
 
 <body>
-    <div class="bg-lines">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-    <header>
-        <nav class="container" role="navigation" aria-label="Primary">
-            <a href="/" class="logo">Ehab S.</a>
-            <div class="links">
-                <ul>
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#certificates">certificates</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="icons">
-                <ul>
-                    <li class="linkedin"><a href="https://www.linkedin.com/in/ehab-sadiq/" target="_blank"
-                            rel="me noopener"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li class="github"><a href="https://github.com/HoBaaMa" target="_blank" rel="me noopener"><i
-                                class="fa-brands fa-github"></i></a></li>
-                    <li class="upwork"><a href="https://www.upwork.com/freelancers/~0148bcaa659006cbeb" target="_blank"
-                            rel="me noopener"><i class="fa-brands fa-upwork"></i></a></li>
-                </ul>
-            </div>
-            <button class="toggle-btn" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
-                <i class="fa-solid fa-bars" aria-hidden="true"></i>
-            </button>
-            <div class="dropdown-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Mobile Menu"
-                tabindex="-1">
-                <ul class="dropdown-links">
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#certificates">certificates</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <ul class="dropdown-icons">
-                    <li class="linkedin"><a href="https://www.linkedin.com/in/ehab-sadiq/" target="_blank"
-                            rel="me noopener"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li class="github"><a href="https://github.com/HoBaaMa" target="_blank" rel="me noopener"><i
-                                class="fa-brands fa-github"></i></a></li>
-                    <li class="upwork"><a href="https://www.upwork.com/freelancers/~0148bcaa659006cbeb" target="_blank"
-                            rel="me noopener"><i class="fa-brands fa-upwork"></i></a></li>
-                </ul>
-            </div>
-
-        </nav>
-    </header>
-
-    <div class="hero" id="home">
-        <div class="container">
-            <div class="text-div">
-                <h4>hello, i'm</h4>
-                <h1><span>ehab sadiq</span></h1>
-                <h2>web developer</h2>
-                <p>I’m Ehab Sadiq, a Computer Science student at Nahda University. I’m passionate about tech, especially
-                    AI, software development, and SEO. </p>
-                <div class="btns">
-                    <a href="mailto:ehab.sadiq89@gmail.com?subject=Hiring Inquiry&body=Hello Ehab,"
-                        class="hire-me-btn">hire me
-                        <span class="btn-icon">
-                            <i class="fa-solid fa-angle-right"></i>
-                        </span>
-                    </a>
-
-                    <a href="EHAB-SADIQ-CV.pdf" download class="download-resume-btn" rel="noopener">download resume
-                        <span class="btn-icon">
-                            <i class="fa-solid fa-angle-right"></i>
-                        </span>
-                    </a>
-                </div>
-            </div>
-            <!-- <div class="img-div">
-                <img class="personal-img" src="assets/images/personal_picture.png" alt=""> -->
-            <!-- <img class="bg-img" src="assets/images/bg_img_home.png" alt=""> -->
-            <div class="cube-container">
-                <!-- Main cube -->
-                <div class="cube-wrapper">
-                    <div class="cube">
-                        <div class="cube-face front"></div>
-                        <div class="cube-face back"></div>
-                        <div class="cube-face right"></div>
-                        <div class="cube-face left"></div>
-                        <div class="cube-face top"></div>
-                        <div class="cube-face bottom"></div>
-                    </div>
-                </div>
-
-                <!-- Reflection -->
-                <div class="cube-reflection">
-                    <div class="cube">
-                        <div class="cube-face front"></div>
-                        <div class="cube-face back"></div>
-                        <div class="cube-face right"></div>
-                        <div class="cube-face left"></div>
-                        <div class="cube-face top"></div>
-                        <div class="cube-face bottom"></div>
-                    </div>
-                </div>
-
-                <!-- Fade overlay -->
-                <div class="fade-overlay"></div>
-            </div>
-        </div>
-    </div>
-
-    <section class="about-me" id="about">
-        <div class="container">
-            <div class="text-div">
-                <h5>about me</h5>
-                <h2><span>professional problem solver for web development</span></h2>
-                <!-- <h4>i develope applications that help people</h4> -->
-                <p>I’m a Full-Stack .NET Developer, dedicated to building scalable, high-performance
-                    web applications. With expertise in .NET Core, C#, ASP.NET, and SQL, I create efficient backend
-                    solutions while also leveraging front-end technologies like HTML, CSS, Bootstrap, and JavaScript.
-                    <br /><br />
-                    Let’s work together to bring your ideas to life!
-                </p>
-                <ul>
-                    <li><i class="fa-solid fa-check"></i> web development</li>
-                    <li><i class="fa-solid fa-check"></i> SEO specialist</li>
-                    <!-- <li><i class="fa-solid fa-check"></i> web developnments</li>
-                    <li><i class="fa-solid fa-check"></i> web developnments</li> -->
-                </ul>
-
-                <div class="contacts">
-                    <div class="email-box">
-                        <div class="icon">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-                        <div class="info">
-                            <h4>Email Me</h4>
-                            <a href="mailto:ehab.sadiq89@gmail.com">ehab.sadiq89@gmail.com</a>
-                        </div>
-                    </div>
-
-                    <div class="phone-box">
-                        <div class="icon">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                        <div class="info">
-                            <h4>Make A Call</h4>
-                            <a href="tel:+201033813411">+20 (10) 3381 3411</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div id="lottie-container">
-                <img src="/assets/images/Web Design Layout.gif" alt="Animation GIF">
-            </div>
-        </div>
-    </section>
-
-    <section class="services" id="services">
-        <div class="container">
-            <div class="top-section">
-                <h2>my <span>services</span></h2>
-            </div>
-            <div class="boxes">
-                <div class="box">
-                    <i class="fa-solid fa-pen-ruler"></i>
-                    <h3>web development</h3>
-                    <p>I create modern, responsive web interfaces that provide exceptional user experiences. Using the
-                        latest design principles and technologies like HTML5, CSS3, and JavaScript, I craft visually
-                        appealing and user-friendly websites that work seamlessly across all devices.</p>
-
-                </div>
-                <div class="box">
-                    <i class="fa-solid fa-rocket"></i>
-                    <h3>fast performance</h3>
-                    <p>Performance is paramount in web development. I optimize applications for speed using efficient
-                        coding practices, database optimization, caching strategies, and modern .NET Core features to
-                        ensure your applications load quickly and run smoothly.</p>
-                </div>
-                <div class="box">
-                    <i class="fa-solid fa-code"></i>
-                    <h3>clean code</h3>
-                    <p>I write maintainable, scalable, and well-documented code following industry best practices and
-                        SOLID principles. My clean coding approach ensures your applications are easy to understand,
-                        modify, and extend for future development needs.</p>
-                </div>
-                <div class="box">
-                    <i class="fa-brands fa-searchengin"></i>
-                    <h3>SEO friendly</h3>
-                    <p>As an SEO specialist, I implement comprehensive search engine optimization strategies to improve
-                        your website's visibility and ranking. From technical SEO to content optimization, I ensure your
-                        site attracts organic traffic and reaches your target audience effectively.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="certificates" id="certificates" aria-labelledby="certificates-heading">
-        <div class="container">
-            <div class="top-section">
-                <h2 id="certificates-heading">explore my popular <span>certificates</span></h2>
-            </div>
-            <div class="certificate-box" role="article" aria-labelledby="cert-1-title">
-                <img src="assets/images/certificates/certificate_1.webp"
-                    alt="ASP.NET Core Web API Certificate - Build ASP.NET Core Web API from Scratch to Finish using .NET 8"
-                    loading="lazy">
-                <div class="text">
-                    <h4><span>Backend development</span></h4>
-                    <h3 id="cert-1-title">Build ASP.NET Core Web API - Scratch To Finish (.NET8 API)</h3>
-                    <p>This comprehensive certification demonstrates my expertise in building enterprise-grade RESTful
-                        APIs using ASP.NET Core and .NET 8. I've mastered advanced concepts including dependency
-                        injection, middleware configuration, Entity Framework Core, authentication & authorization, API
-                        versioning, and performance optimization techniques for scalable web services.</p>
-                    <a href="https://www.udemy.com/certificate/UC-dc69463c-70d5-4f4b-b3e3-b1afe97616e8/" class="link"
-                        target="_blank" rel="noopener noreferrer"
-                        aria-label="View ASP.NET Core Web API Certificate on Udemy (opens in new tab)">
-                        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="certificate-box certificate-box-2" role="article" aria-labelledby="cert-2-title">
-                <img src="assets/images/certificates/certificate_2.webp"
-                    alt="Complete C# Masterclass Certificate - Comprehensive C# programming course" loading="lazy">
-                <div class="text">
-                    <h4><span>mastering c#</span></h4>
-                    <h3 id="cert-2-title">Complete C# Masterclass</h3>
-                    <p>This masterclass certification validates my deep understanding of C# programming language and
-                        .NET ecosystem. I've gained expertise in advanced C# concepts including generics, delegates,
-                        events, LINQ, async/await patterns, design patterns, memory management, and modern C# features
-                        up to the latest versions, enabling me to write efficient and maintainable enterprise
-                        applications.</p>
-                    <a href="https://www.udemy.com/certificate/UC-42a0f613-2bb6-4314-9d12-772a97510381/" class="link"
-                        target="_blank" rel="noopener noreferrer"
-                        aria-label="View Complete C# Masterclass Certificate on Udemy (opens in new tab)">
-                        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="certificate-box" role="article" aria-labelledby="cert-3-title">
-                <img src="assets/images/certificates/certificate_3.webp"
-                    alt="Full Stack .NET Web Developer Certificate - Complete web development with .NET technologies"
-                    loading="lazy">
-                <div class="text">
-                    <h4><span>full stack development</span></h4>
-                    <h3 id="cert-3-title">Full Stack .NET Web Developer</h3>
-                    <p>This comprehensive full-stack certification showcases my ability to develop complete web
-                        applications from frontend to backend. I've mastered the integration of modern frontend
-                        technologies (HTML5, CSS3, JavaScript, Bootstrap) with robust .NET backend systems, database
-                        design with SQL Server.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="contact-text">
-                <h2>think we could create something great together?</h2>
-            </div>
-            <p>i'm avaliable for part-time opportunities to collaborate push boundaries and create innovative solutions.
-            </p>
-            <div class="contact-btns">
-                <a href="mailto:ehab.sadiq89@gmail.com" class="contact-me-btn">Contact me</a>
-
-                <a href="https://www.linkedin.com/in/ehab-sadiq/" class="button-icon" rel="me noopener"
-                    target="_blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        fill="#000000" version="1.1" width="20px" height="20px" viewBox="0 0 512 512"
-                        xml:space="preserve">
-                        <g id="7935ec95c421cee6d86eb22ecd125aef">
-                            <path style="
-                                    display: inline;
-                                    fill-rule: evenodd;
-                                    clip-rule: evenodd;
-                                  "
-                                d="M116.504,500.219V170.654H6.975v329.564H116.504   L116.504,500.219z M61.751,125.674c38.183,0,61.968-25.328,61.968-56.953c-0.722-32.328-23.785-56.941-61.252-56.941   C24.994,11.781,0.5,36.394,0.5,68.722c0,31.625,23.772,56.953,60.53,56.953H61.751L61.751,125.674z M177.124,500.219   c0,0,1.437-298.643,0-329.564H286.67v47.794h-0.727c14.404-22.49,40.354-55.533,99.44-55.533   c72.085,0,126.116,47.103,126.116,148.333v188.971H401.971V323.912c0-44.301-15.848-74.531-55.497-74.531   c-30.254,0-48.284,20.38-56.202,40.08c-2.897,7.012-3.602,16.861-3.602,26.711v184.047H177.124L177.124,500.219z">
-                            </path>
-                        </g>
-                    </svg>
-                </a>
-                <a href="https://wa.me/201033813411" class="button-icon" rel="me noopener" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24">
-                        <path
-                            d="M4.00655 7.93309C3.93421 9.84122 4.41713 13.0817 7.6677 16.3323C8.45191 17.1165 9.23553 17.7396 10 18.2327M5.53781 4.93723C6.93076 3.54428 9.15317 3.73144 10.0376 5.31617L10.6866 6.4791C11.2723 7.52858 11.0372 8.90532 10.1147 9.8278C10.1147 9.8278 10.1147 9.8278 10.1147 9.8278C10.1146 9.82792 8.99588 10.9468 11.0245 12.9755C13.0525 15.0035 14.1714 13.8861 14.1722 13.8853C14.1722 13.8853 14.1722 13.8853 14.1722 13.8853C15.0947 12.9628 16.4714 12.7277 17.5209 13.3134L18.6838 13.9624C20.2686 14.8468 20.4557 17.0692 19.0628 18.4622C18.2258 19.2992 17.2004 19.9505 16.0669 19.9934C15.2529 20.0243 14.1963 19.9541 13 19.6111" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-
-    </section>
-    <script src="assets/JS/main.js"></script>
-
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
 </body>
 
 </html>
